@@ -252,7 +252,6 @@ preinstall_l2tp(){
     echo
     echo "Press any key to start... or press Ctrl + C to cancel."
     char=`get_char`
-
 }
 
 install_l2tp(){
