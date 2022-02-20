@@ -239,7 +239,7 @@ preinstall_l2tp(){
     read -p "(默认用户名: l2tp66):" username
     [ -z ${username} ] && username="l2tp66"
 
-    password=`rand`
+    # password=`rand`
     echo "请输入 ${username}'s 密码:"
     read -p "(默认密码: l2tp66):" password
     [ ! -z ${password} ] && password="l2tp66"
