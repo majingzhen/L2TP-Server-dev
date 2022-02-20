@@ -242,7 +242,7 @@ preinstall_l2tp(){
     # password=`rand`
     echo "请输入 ${username}'s 密码:"
     read -p "(默认密码: l2tp66):" password
-    [ ! -z ${password} ] && password="l2tp66"
+    [ -z ${password} ] && password="l2tp66"
 
     echo
     echo "ServerIP:${IP}"
